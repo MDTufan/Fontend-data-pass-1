@@ -51,10 +51,10 @@ function App() {
 
     <form action=""  onSubmit={handelsubmit}>
       Name: <br />
-    <input type="text" name="name" id="" />
+    <input type="text" name="name" id="" placeholder='Enter Your Name' />
     <br />
     Email:<br />
-    <input type="email" name="email" id="" />
+    <input type="email" name="email" id=""  placeholder='Enter Your Email'/>
     <br />
     <br />
     <button type='submit'>Add User</button>
