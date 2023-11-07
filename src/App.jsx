@@ -7,7 +7,7 @@ function App() {
   const[user,setUser]=useState([]);
 
   useEffect(()=>{
-    fetch("http://localhost:3000/user")
+    fetch("https://backend-isjcfflji-mdtufan.vercel.app/user")
     .then(res => res.json())
     .then(data => setUser(data))
     
@@ -22,7 +22,7 @@ function App() {
     const alluser={name,email};
    
 
-    fetch('http://localhost:3000/user',{
+    fetch('https://backend-isjcfflji-mdtufan.vercel.app/user',{
       method:"POST",
       headers:{'content-type':"application/json"},
       body:JSON.stringify(alluser)
@@ -43,7 +43,7 @@ function App() {
   return (
 
     
-    <div className='all-1'>
+    <div className='all-1 '>
     
     {
       user.map(sUser => <li key={sUser.name}>{sUser.name}</li>)

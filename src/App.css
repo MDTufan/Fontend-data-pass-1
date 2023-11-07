@@ -1,8 +1,9 @@
 .all-1{
     
     text-align: center;
+    margin-top: 20px;
+}
+body{
+    background-color: rgba(0, 0, 255, 0.205);
 }
 
-body{
-    background-color: burlywood;
-}
